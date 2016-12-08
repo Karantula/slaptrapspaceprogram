@@ -77,5 +77,10 @@
       exit();
 
     }
+  
+
+  if ($_GET['action'] == 'sendToCustomer') {
+
+    $query = "SELECT email FROM customers WHERE customer = ".mysqli_real_escape_string($link, $_SESSION['id'])." AND "task neki sad ovde treba za customera..? ili tako nesto ;
   }
- ?>
+}
