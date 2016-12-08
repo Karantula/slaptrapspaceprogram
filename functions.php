@@ -2,7 +2,7 @@
 
   session_start();
 
-  $link = mysqli_connect("localhost", "cl23-dumbo", "GFeENxzU/", "cl23-dumbo");
+  $link = mysqli_connect("localhost", "*********", "************", "************");
 
   if (mysqli_connect_errno() ) {
 
