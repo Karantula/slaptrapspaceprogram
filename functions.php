@@ -2,7 +2,7 @@
 
   session_start();
 
-  $link = mysqli_connect("localhost", "**********", "***********", "*********");
+  $link = mysqli_connect("localhost", "cl23-dumbo", "GFeENxzU/", "cl23-dumbo");
 
   if (mysqli_connect_errno() ) {
 
@@ -70,10 +70,18 @@
 
         echo "<p>".$row['task']."</p>";
 
-        echo "<p>Follow</p></div>";
+        echo '<div class="dropdown closed">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"  data-userId="'.$row['userid'].'" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown button
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" id="sendToCustomer" href="actions.php?action=sendToCustomer">Send to customer</a>
+    <a class="dropdown-item" id="sendToMover" href="actions.php?action=sendToMover">Send to mover</a>
+    <a class="dropdown-item" id="submitReport" href="actions.php?action=submitReport">Submit a report</a>
+  </div>
+</div></div>';
       }
     }
-
   }
 
   function displaySearch() {
