@@ -72,7 +72,7 @@
           success: function(result) {
             if (result == 1 ) {
 
-              window.location.assign("http://slaptrap.systems/");
+              window.location.assign("http://example.com/");
 
             } else {
 
@@ -81,7 +81,12 @@
             }
           }
         })
+        
+      })
+        
+      $("#sendToCustomer").click(function() {
 
+        alert($(this).attr("href"));
       })
 
     </script>
