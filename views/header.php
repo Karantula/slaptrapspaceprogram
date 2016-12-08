@@ -43,4 +43,5 @@
     </li>
   </ul>
 <?php displaySearch(); ?>
+      <?php echo $_SESSION['id']; ?>
 </nav>
